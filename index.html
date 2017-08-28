@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>::Skip userspace::</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
+  <link rel="icon" type="image/png" href="images/favicon.png">
+-->
+
+</head>
+<body>
+
+  <!-- LAYOUT -->
+    <div class="container">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 5%; margin-left: 50%">
+          <p> <img src="images/laklak.png" /></p>
+        </div>
+      </div>
+    </div>
+  <!-- LAYOUT -->
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>DAC на MS SQL Server EXPRESS</small></h5>
+      </div>
+      <div class="twelve columns">
+
+        <p>
+          По умолчанию в этой редакции(EXPRESS) MS SQL Server режим DAC (Dedicated Admin Connection) отключен.
+
+НО! Режим DAC  может быть включен насильно:
+
+          <ol>
+            <li>Включить SQL Server Configguration Manager – > Службы SQL Server</li>
+            <li>ПКМ -> SQL Server Express-> Свойства, идем в вкладку “Параметры запуска”</li>
+            <li>В соответсвующее поле добавляем флаг трассировки -T7806</li>
+            <li>Перезапускаем службежку</li>
+            <li>СТАРТУЕМ!
+            <pre><code>
+              sqlcmd -S .\sqlexpress -Uвашюзер -Pвашпароль -A
+            </code></pre>
+            </li>
+          </ol>
+        </p>
+      <h7>Tags:</h7>
+       #MSSQL #DAC
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- LAYOUT -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%; margin-left: 50%">
+        <p> <img src="images/laklak.png" /></p>
+      </div>
+    </div>
+  </div>
+<!-- LAYOUT -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>Перезагрузить страницу jQuery</small></h5>
+      </div>
+      <div class="twelve columns">
+
+        <p>
+          <pre>
+            <code>
+
+
+              $.ajax({
+                  url: "",
+                  context: document.body,
+                  success: function(a,x){
+                      $(this).html(a);
+                  }
+              });
+
+
+            </code>
+          </pre>
+        </p>
+      <h7>Tags:</h7>
+       #jQuery #tips #pageReload
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- LAYOUT -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%; margin-left: 50%">
+        <p> <img src="images/laklak.png" /></p>
+      </div>
+    </div>
+  </div>
+<!-- LAYOUT -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>Обо всём и ни о чём сразу</small></h5>
+      </div>
+      <div class="twelve columns">
+
+        <p>Как много времени прошло с тех пор, когда я по каким-то причинам забросил свои интересы и занимался не пойми чем. Больше ни минуты такой жизни.
+Живите только своими интересами, а на всё остальное забейте х%й. Индивид лучше толпы. Я всегда так думал, и оказалось, я не одинок в своих размышлениях.
+О чём этот блог? Ни о чём и обо всём сразу: о работе, мечтах, интересах  – жизни одного индивида…</p>
+      <h7>Tags:</h7>
+       #Intro #ep4sh #You[Not]Alone
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

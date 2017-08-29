@@ -28,6 +28,10 @@
 img {
   margin-left: 30%;
 }
+
+.strike {
+   text-decoration: line-through;
+}
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {

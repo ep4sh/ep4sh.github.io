@@ -22,14 +22,110 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
-  <!-- Favicon
+  <!-- jQuery CDN
   ––––––––––––––––––––––––––––––––––––––––––––––––––
-  <link rel="icon" type="image/png" href="images/favicon.png">
 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- jQuery for images on ep4sh.io -->
+<script>
+$(document).ready(function(){
+   $("img").click(function(){
+        $("img").animate({    width: [ "100%" ],
+    height: [ "100%"]});
+    });
+
+    $("img").dblclick(function(){
+         $("img").animate({    width: [ "50%" ],
+     height: [ "50%"]});
+     });
+});
+</script>
+
 
 </head>
 <body>
 
+
+  <!-- LAYOUT -->
+    <div class="container">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 5%; margin-left: 30%">
+          <p> <img src="images/laklak.png" /></p>
+        </div>
+      </div>
+    </div>
+  <!-- LAYOUT -->
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>SSH хэки</small></h5>
+      </div>
+      <div class="twelve columns">
+        <p>
+
+          <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-SSH-LOCAL-FORWARDING.png?raw=true"></p>
+          <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-SSH-REMOTE-FORWARDING.png?raw=true"></p>
+
+        </p>
+
+
+
+      <h7>Tags:</h7>
+        #linux #SSH #howto #sysAdmin
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- LAYOUT -->
+    <div class="container">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 5%; margin-left: 30%">
+          <p> <img src="images/laklak.png" /></p>
+        </div>
+      </div>
+    </div>
+  <!-- LAYOUT -->
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>Настройка сети в Centos7</small></h5>
+      </div>
+      <div class="twelve columns">
+        <p>
+
+          Когда не сможешь вспомнить, где в <span class="strike">
+            любимом
+          </span> Centos настраивается сеть. Идешь <strong>/etc/sysconfig/network-scripts/ifcfg-eth0</strong>
+        </p>
+        <pre>
+          <code>
+            TYPE=Ethernet
+  BOOTPROTO=static
+  NAME=enp3s0
+  UUID=9c3362c0-a615-4504-bb07-f2951f3810dd
+  DEVICE=enp3s0
+  ONBOOT=yes
+  IPADDR=10.20.100.22
+  NETMASK=255.255.255.0
+  GATEWAY=10.20.100.1
+  DNS1=10.20.100.1</code>
+        </pre>
+И сеть в ребут:
+<pre><code>
+sudo systemctl restart networking
+</code></pre>
+
+
+      <h7>Tags:</h7>
+        #linux #network #Centos #sysAdmin
+      </div>
+    </div>
+  </div>
 
 
   <!-- LAYOUT -->
@@ -54,8 +150,8 @@
           Отбивают желание копаться в интернетах с целью поиска нужного молотка.
         </p>
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linuxAdministrativeTools.jpg?raw=true"></p>
-        <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linuxAdministrativeTools-2.jpg?raw=true"></p>
-        <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-SCP.png?raw=true"></p>
+        <p><img width="70%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linuxAdministrativeTools-2.jpg?raw=true"></p>
+        <p><img width="70%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-SCP.png?raw=true"></p>
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-netstat.png?raw=true"></p>
 
 
@@ -117,6 +213,7 @@
         NB!
         <pre>
           <code>
+            CTRL+R = поиск по истории ввода в терминал
             CTRL+Z = отослать задачу в background
             CTRL+C = терминуть текущую задачу
             CTRL+D = выйти вон
@@ -313,7 +410,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 15%; margin-left: 30%">
+      <div class="one-half column" style="margin-top: 15%; margin-left: 50%">
         <p> <small><a href='tg://resolve?domain=ep4sh'> ! </a></small> </p>
       </div>
     </div>

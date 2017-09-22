@@ -46,6 +46,129 @@ $(document).ready(function(){
 </head>
 <body>
 
+    <!-- LAYOUT -->
+      <div class="container">
+        <div class="row">
+          <div class="one-half column" style="margin-top: 5%; margin-left: 30%">
+            <p> <img src="images/laklak.png" /></p>
+          </div>
+        </div>
+      </div>
+    <!-- LAYOUT -->
+
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns" style="margin-top: 5%">
+          <h5>Subj: <small>Centos FirewallD</small></h5>
+        </div>
+        <div class="twelve columns">
+          <p>
+
+
+            <h3>Управление экраном:</h3>
+<pre>
+<code>
+
+# firewall-cmd --state
+
+показать состояние
+
+# systemctl [start | status | stop] firewalld
+
+запуск, состояние, стоп таргета
+
+# systemctl [enable | disable ] firewalld
+
+добавить, убрать из автозагрузки
+
+# firewall-cmd --reload
+
+Перезагрузить конфигурацию
+
+# firewall-cmd --panic-[on | off ]
+
+включить выключить панику
+
+</code>
+</pre>
+<h3>Зоны:</h3>
+<pre>
+<code>
+
+    <strong>drop</strong> - все входящие пакеты отбрасываются без ответа. Разрешены только исходящие соединения.
+
+    <strong>block</strong> - входящие соединения отклоняются с ответом icmp-host-prohibited / icmp6-adm-prohibited. Разрешены только инициированные системой соединения.
+
+    <strong>trusted</strong> - разрешены все подключения.
+
+
+
+
+
+    <strong>external</strong> - зона для внешнего интерфейса роутера (т.н. маскарадинг). Разрешены только определенные нами входящие соединения.
+
+    <strong>internal</strong> - внутренняя зона. Мы доверяем окружению, но разрешены только определенные входящие соединения
+
+
+
+    <strong>dmz</strong> - зона DMZ, разрешены только определенные входящие соединения.
+
+    <strong>work</strong> - зона рабочей сети. Мы не доверяем окружению. Разрешены только определенные входящие соединения.
+
+    <strong>home</strong> - домашняя зона. Мы доверяем окружению, но разрешены только определенные входящие соединения
+
+
+
+    <strong>public</strong> - default-зона.  Мы не доверяем этой сети и разрешены только определенные входящие соединения.
+
+</code>
+</pre>
+<h3>Управление зонами/сервисами зон:</h3>
+<pre>
+
+<code>
+
+    #firewall-cmd --get-zones
+
+    Показать все зоны
+
+    #firewall-cmd --get-zones --list-services --permanent
+
+    Показать все постоянные сервисы всех зон
+
+    #firewall-cmd --list-ports --permanent
+
+    Показать все порты (постоянно открытые)
+
+    #firewall-cmd --zone=public --permanent --add-service=https
+
+    Открыть в public доступ к https-трафу
+
+    #firewall-cmd --zone=public --add-port=12000/tcp
+
+    Открыть в зоне public tcp порт 12000
+
+    #firewall-cmd --zone=public --add-port=31337-31339/udp
+
+    Открыть в public группу портов 31337-31339 по протоколу udp
+
+    </code>
+</pre>
+Так же можно уменьшить количество <span class="strike">заёба</span> боли и впихивать настройки в <a href="http://www.firewalld.org/documentation/service/examples.html">.xml-файлы</a>
+
+          </p>
+
+
+
+        <h7>Tags:</h7>
+          #linux #firewall #Centos #firewalld #howto #sysAdmin
+        </div>
+      </div>
+    </div>
+
+
+
+
 
   <!-- LAYOUT -->
     <div class="container">

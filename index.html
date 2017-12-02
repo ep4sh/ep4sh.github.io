@@ -46,6 +46,124 @@ $(document).ready(function(){
 </head>
 <body>
 
+  <!-- LAYOUT -->
+    <div class="container">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 5%; margin-left: 30%">
+          <p> <img src="images/laklak.png" /></p>
+        </div>
+      </div>
+    </div>
+  <!-- LAYOUT -->
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+        <h5>Subj: <small>Алгоритм сброса пароля root Centos</small></h5>
+      </div>
+      <div class="twelve columns">
+        <p>
+
+            <ol>
+
+                <li>Войти в меню GRUB (Shift + e при загрузке)</li>
+
+                <li>Убрать всякую шерсть с параметров ядра и передать выполненине /bin/sh в init, жмать F10</li>
+
+        <li>Перемонтировать корневую ФС с аттрибутом записи: <code> mount -O rw,remount / </code> </li>
+
+        <li>Установить <strike>сукасложный</strike>пароль root:
+
+        <code> passwd root </code>
+
+        </li>
+
+        <li>Инициализировать загрузку политик SELinux в ядро (прям как в initramfs)
+
+        <code>/sbin/load_policy -i</code>
+
+        </li>
+
+        <li>
+
+        ?????
+
+        </li>
+
+        <li>
+
+        PROFIT!
+
+        </li>
+
+            </ol>
+
+         </p>
+
+
+
+      <h6>Tags:</h6>
+        #centos #password-reset #linux #howto #sysAdmin
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- LAYOUT -->
+      <div class="container">
+        <div class="row">
+          <div class="one-half column" style="margin-top: 5%; margin-left: 30%">
+            <p> <img src="images/laklak.png" /></p>
+          </div>
+        </div>
+      </div>
+    <!-- LAYOUT -->
+
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns" style="margin-top: 5%">
+          <h5>Subj: Selenium Python ругается на отсутсвие драйвера<small><strong>Message: 'geckodriver' executable needs to be in PATH.</strong></small></h5>
+        </div>
+        <div class="twelve columns">
+
+
+    <p>
+
+    Исправляем так:</p>
+
+    <p>Качаем-с <a href="http://www.seleniumhq.org/download/">сам</a> драйвер (Win10 Pro x64). Закидываем в папку с FireFox (а разве есть другие православные браузерА?):</p>
+
+    <p>C:\Program Files (x86)\Mozilla Firefox</p>
+
+    <p>Заходим-> Win+Pause -> Доп. параметры системы -> Переменные среды</p>
+
+    <p>Среди системных переменных ищем-с PATH и редактируем, добавляя тот же самый путь:</p>
+
+    <p>C:\Program Files (x86)\Mozilla Firefox</p>
+
+    <p>Открываем IDE (или что у Вас там) и наслаждаемся роботизированным браузером, остаётся добавить носков, посыпать солью и <strike>брутить админки</strike> тестировать локалхост.
+
+    </p>
+
+
+
+
+
+        <h6>Tags:</h6>
+          #windows #python #selenium #win10 #geckodriver
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <!-- LAYOUT -->
       <div class="container">
         <div class="row">
@@ -160,7 +278,7 @@ $(document).ready(function(){
 
 
 
-        <h7>Tags:</h7>
+        <h6>Tags:</h6>
           #linux #firewall #Centos #firewalld #howto #sysAdmin
         </div>
       </div>
@@ -195,7 +313,7 @@ $(document).ready(function(){
 
 
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
         #linux #SSH #howto #sysAdmin
       </div>
     </div>
@@ -244,7 +362,7 @@ sudo systemctl restart networking
 </code></pre>
 
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
         #linux #network #Centos #sysAdmin
       </div>
     </div>
@@ -278,7 +396,7 @@ sudo systemctl restart networking
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-netstat.png?raw=true"></p>
 
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
         #linux #tools #linuxTools #sysAdminToolSet
       </div>
     </div>
@@ -308,7 +426,7 @@ sudo systemctl restart networking
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/linux-Network-Setup-Sample.png?raw=true"></p>
 
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #iptables #linux #firewall #linuxNetwork #setUp
       </div>
     </div>
@@ -347,7 +465,7 @@ sudo systemctl restart networking
         </pre>
         </p>
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #linux #tooltips #features #NB
       </div>
     </div>
@@ -376,7 +494,7 @@ sudo systemctl restart networking
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/iptables-Flow.jpg?raw=true"></p>
 
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #iptables #linux-firewall #trafficFlow #NB
       </div>
     </div>
@@ -408,7 +526,7 @@ sudo systemctl restart networking
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/OpenSSL-usage.jpg?raw=true"></p>
         <p><img width="50%" src="https://github.com/ep4sh/sysadm/blob/master/linux/OpenSSL-usage2.jpg?raw=true"></p>
 
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #OpenSSL #crypto #RSA #DSA #PKI #NB
       </div>
     </div>
@@ -450,7 +568,7 @@ sudo systemctl restart networking
             </li>
           </ol>
         </p>
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #MSSQL #DAC
       </div>
     </div>
@@ -493,7 +611,7 @@ sudo systemctl restart networking
             </code>
           </pre>
         </p>
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #jQuery #tips #pageReload
       </div>
     </div>
@@ -522,7 +640,7 @@ sudo systemctl restart networking
         <p>Как много времени прошло с тех пор, когда я по каким-то причинам забросил свои интересы и занимался не пойми чем. Больше ни минуты такой жизни.
 Живите только своими интересами, а на всё остальное забейте <span class="strike">хуй</span> хуй. Индивид лучше толпы. Я всегда так думал, и оказалось, я не одинок в своих размышлениях.
 О чём этот блог? Ни о чём и обо всём сразу: о работе, мечтах, интересах  – жизни одного индивида…</p>
-      <h7>Tags:</h7>
+      <h6>Tags:</h6>
        #Intro #ep4sh #You[Not]Alone
       </div>
     </div>
